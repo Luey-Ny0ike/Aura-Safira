@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :teams
   resources :projects
   resources :home
-  resources :contact_us
   resources :about_us
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
