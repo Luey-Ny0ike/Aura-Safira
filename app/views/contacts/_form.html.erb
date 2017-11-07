@@ -1,37 +1,37 @@
-<%= form_with(model: contact, local: true) do |form| %>
-  <% if contact.errors.any? %>
+<%= form_with(model: @contact, local: true) do |form| %>
+  <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
       <ul>
-      <% contact.errors.full_messages.each do |message| %>
+      <% @contact.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :contact_name %>
+<div class="row">
+  <div class="field col-md-11">
+    <%= form.text_field :name, id: :contact_name, :class=>"form-control", placeholder: "name"%>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :contact_email %>
+  <div class="field col-md-11">
+    <%= form.text_field :email, id: :contact_email, :class=>"form-control", placeholder: "email" %>
   </div>
 
-  <div class="field">
-    <%= form.label :subject %>
-    <%= form.text_field :subject, id: :contact_subject %>
+  <div class="field col-md-11">
+    <%= form.text_field :subject, id: :contact_subject, :class=>"form-control", placeholder: "subject"%>
   </div>
 
-  <div class="field">
-    <%= form.label :message %>
-    <%= form.text_field :message, id: :contact_message %>
+  <div class="field col-md-11">
+    <%= form.text_area :message, id: :contact_message, :class=>"form-control", placeholder: "message" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions col-md-12">
+    <%= button_tag(type: "submit", class: "btn", id: "send")do%>
+    Submit <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAnUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN0S+bUAAAANdFJOU4f+PR/rArhrzWGl1wpAWcUnAAAAgklEQVQIHWMIhQOGcFUYmyFcYg6UzRAsKMIMYTOENgoKLgKzGUIZBQUFO48COQyhhkCmoIMpiBkNYgpKqQKZ4WlgkGDKANYBJhhCo8AKgKoZQkPAzJ1HgWoVQcwksGGMglD7GEI3CkrXQLQFCYqpglmhDAEgi8CAIegolAU0AQ6QmAAIvziny4jaaQAAAABJRU5ErkJggg==">
+    <% end %>
   </div>
+</div>
 <% end %>
