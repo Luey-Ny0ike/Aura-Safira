@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   resources :blogs do
     resources :comments
   end
