@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div class="container-fluid nyuma">
   <div class="container row">
     <p id="notice"><%= notice %></p>
@@ -10,35 +9,6 @@
   <br><br>
     <%= render 'contacts/form'%>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Subject</th>
-      <th>Message</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.name %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.subject %></td>
-        <td><%= contact.message %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Contact', new_contact_path %>
         <h4 class="line">Information</h4>
         <p>Visit our offices or reach us through the details below.</p>
         <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANBAMAAACAxflPAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAwUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFo/HAsAAAAQdFJOU5P8OVADKOHyaxXAcXR+pclBOf5iAAAAVUlEQVQIHWNwcVFYEOLiwODiIygoDKIVBQXFpwBpRtkAwSNA+mGJpyALiC/kLNgCpA0FEwVDgLSboKC8C5D2gOpzSRT8AuIDFYDNc3GQdgHzXbYAaQBwnBZwvuq1uwAAAABJRU5ErkJggg==">
@@ -53,3 +23,9 @@
         <p><strong>Monday-Friday: </strong>8am - 5pm</p>
         <p><strong>Saturday: </strong>8am - 2pm</p>
         <p><strong>Sunday-</strong> closed</p>
+  </div>
+  <div class="col-md-6 map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.790754330109!2d36.817443949813054!3d-1.3003948990468714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10e477ae132f%3A0xf19d102f06e702e7!2sTaj+Tower+Limited%2C+Upper+Hill+Rd%2C+Nairobi!5e0!3m2!1sen!2ske!4v1510060839993" width="680" height="640" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
