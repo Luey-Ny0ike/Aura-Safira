@@ -9,6 +9,27 @@
   </head>
 
   <body>
+<div class="van">
+  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-nav" aria-hidden="">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-menu-hamburger">
+          <span></button>
+          <a class="navbar-brand page-scroll" href="/"><%= image_tag("asc.png")%></a>
+        </div>
+        <!-- navbar-header -->
+        <div id="menu-nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+        </ul>
+      </div>
+      <!-- navbar-collapse -->
+    </div>
+    <!-- container-fluid -->
+  </nav>
+</div>
     <%= yield %>
   </body>
 </html>
