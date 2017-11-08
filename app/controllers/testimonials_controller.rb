@@ -14,7 +14,7 @@ class TestimonialsController < ApplicationController
 
   # GET /testimonials/new
   def new
-    @testimonial = Testimonial.new
+    @testimonial = current_user.testimonials.build
   end
 
   # GET /testimonials/1/edit
@@ -24,7 +24,7 @@ class TestimonialsController < ApplicationController
   # POST /testimonials
   # POST /testimonials.json
   def create
-    @testimonial = Testimonial.new(testimonial_params)
+    @testimonial = current_user.testimonials.build(testimonial_params)
 
     respond_to do |format|
       if @testimonial.save
