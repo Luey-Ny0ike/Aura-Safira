@@ -14,6 +14,7 @@ class CommentsController < ApplicationController
   # GET blogs/1/comments/new
   def new
     @comment = @blogs.comments.build
+    @comment.user_id = current_user.id
   end
 
   # GET blogs/1/comments/1/edit
@@ -23,6 +24,7 @@ class CommentsController < ApplicationController
   # POST blogs/1/comments
   def create
     @comment = @blogs.comments.build(comment_params)
+    @comment.user_id = current_user.id
 
     if @comment.save
       redirect_to([@comment.blogs, @comment], notice: 'Comment was successfully created.')
