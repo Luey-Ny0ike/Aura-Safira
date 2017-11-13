@@ -15,3 +15,12 @@
 //= require_tree .
 //= require jquery
 //= require toastr
+$(document).ready(function(){
+  window.sr = ScrollReveal({ reset: true });
+  sr.reveal('.mission', { duration: 1000 });
+  sr.reveal('.vission', { duration: 1000 });
+  sr.reveal('.asc', { duration: 1000 });
+  sr.reveal('.int', { duration: 1000 });
+  sr.reveal('.coll', { duration: 1000 });
+  sr.reveal('.exe', { duration: 1000 });
+});
