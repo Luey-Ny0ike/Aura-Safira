@@ -1,3 +1,26 @@
 // Place all the styles related to the teams controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.picha{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+
+
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  /* Full height */
+  background: url("https://images.pexels.com/photos/296881/pexels-photo-296881.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
