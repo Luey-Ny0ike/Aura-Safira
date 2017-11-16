@@ -1,24 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<div class="container-fluid projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><h4 id="tle"><%= @project.title%></h4><br></div>
+      <div class="col-md-8">
+        <%= image_tag @project.picture.url(:large), :class=>"img-responsive" %>
+      </div>
+      <div class="col-md-4">
+        <h5><strong>Project Description</strong></h5>
+        <hr class="line">
+        <p>
+          <%= @project.description %>
+        </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+        <h5><strong>Project Details</strong></h5>
+        <hr class="line">
+        <p><strong>Status: </strong><%= @project.status %></p>
+        <p><strong>Skills: </strong><%= @project.skills %></p>
+      </div>
+    </div>
+  </div>
 
-<p>
-  <strong>Status:</strong>
-  <%= @project.status %>
-</p>
 
-<p>
-  <strong>Skills:</strong>
-  <%= @project.skills %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<div class="container">
+  <% if current_user.superadmin_role? %>
+  <%= link_to 'Edit', edit_project_path(@project) %>
+  <% end %>
+</div>
+</div>
