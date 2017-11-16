@@ -1,3 +1,28 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.projects{
+  .col-md-7{
+    margin-bottom: 12px;
+  }
+  .line{
+    background-color: red;
+    margin-top: 2px;
+  }
+  #card{
+    transition: 0.25s box-shadow;
+    margin: 20px;
+    padding: 4px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index:1;
+    transition: all 0.5s ease;
+    color: #4A4A4A;
+    border: 1px solid #E8E8E8;
+    #cardi-title{
+      padding: 12px;
+    }
+  }
+}
