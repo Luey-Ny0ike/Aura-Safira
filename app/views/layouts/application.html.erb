@@ -9,15 +9,6 @@
   </head>
 
   <body>
-<div class="van">
-  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-nav" aria-hidden="">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-menu-hamburger">
-          <span></button>
-          <a class="navbar-brand page-scroll" href="/"><%= image_tag("asc.png")%></a>
     <div class="van">
       <nav id="main-nav" class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix">
         <div class="container">
@@ -45,20 +36,7 @@
             <!-- container-fluid -->
           </nav>
         </div>
-        <!-- navbar-header -->
-        <div id="menu-nav" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
 
-        </ul>
-      </div>
-      <!-- navbar-collapse -->
-    </div>
-    <!-- container-fluid -->
-  </nav>
-</div>
-
-<% unless flash.empty? %>
-     <script type="text/javascript">
         <% unless flash.empty? %>
         <script type="text/javascript">
           <% flash.each do |f| %>
@@ -67,6 +45,7 @@
           <% end %>
         </script>
         <% end %>
+        <%= yield %>
         <div class="footer">
           <div class="container row">
             <div class="col-md-6">
@@ -90,4 +69,7 @@
             </div>
           </div>
         </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <%= javascript_include_tag 'scrollreveal.min.js', 'data-turbolinks-track': 'reload' %>
+      </body>
+    </html>
