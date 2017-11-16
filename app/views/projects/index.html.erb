@@ -1,5 +1,24 @@
 <p id="notice"><%= notice %></p>
 
+<div class="projects">
+  <div class="row">
+  <% @projects.each do |project|%>
+      <div class="col-md-4">
+        <div id="card">
+          <div class="top">
+              <%= image_tag project.picture.url(:medium, :class=>"img-responsive"), id: "image-main"%>
+          </div>
+          <div class="details">
+            <div id="cardi-title">
+              <%=link_to (project.title), project_path(project.id)%>
+            </div>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
+</div>
+
 <h1>Projects</h1>
 
 <table>
