@@ -59,3 +59,41 @@
     background-size: cover;
   }
 }
+.batman{
+  margin: 0px;
+  margin-bottom: 100px;
+  .bat1{
+    background-image: url('https://images.pexels.com/photos/8704/pen-idea-bulb-paper.jpg?h=350&auto=compress&cs=tinysrgb');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .icn{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 5px;
+  }
+  .sling{
+    opacity: 1.0;
+  }
+  .bat{
+    background-image: url('https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg?h=350&auto=compress&cs=tinysrgb');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .bat2{
+    background-image: url('https://images.pexels.com/photos/159201/circuit-circuit-board-resistor-computer-159201.jpeg?h=350&auto=compress&cs=tinysrgb');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    opacity: 0.8;
+  }
+}
