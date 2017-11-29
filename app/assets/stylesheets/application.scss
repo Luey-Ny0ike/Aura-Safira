@@ -97,3 +97,77 @@
     opacity: 0.8;
   }
 }
+#light{
+  height: 400px;
+  width: 100%;
+}
+#under{
+  margin-top: 10px;
+  width: 18%;
+  float: left;
+  margin-bottom: 20px;
+  background-color: #ea3c8e;
+  border-color: #ea3c8e;
+  color: #ea3c8e;
+}
+#hd{
+  font-family: 'Roboto Slab', serif;
+}
+#intro{
+  font-family: 'Barlow', sans-serif;
+  color: #ea3c8e;
+}
+.mission-vision{
+  margin-top: 40px;
+  #mission{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+  }
+  #vision{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+  }
+  .more{
+    border-style: solid 1px;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+
+    .apo-juu{
+      width: 4%;
+      float: left;
+      margin-top: 92px;
+      color: #ea3c8e;
+    }
+    #about-title{
+      font-family: 'Roboto Slab', serif;
+      color: white;
+      margin-top: 122px;
+    }
+    #more-about{
+      color: white;
+    }
+    @media (max-width: 257px){
+      height: 140px;
+      width: 140px;
+    }
+  }
+  .more:hover{
+    background-color: black;
+    #more-about{
+      color: white;
+    }
+  }
+  .in{
+    .sc{
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+  .icn{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+}
