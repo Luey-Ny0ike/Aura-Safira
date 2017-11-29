@@ -42,3 +42,20 @@
   background-color: black;
   margin-top: 30px;
 }
+
+.carousel-inner{
+  .one{
+    width: 100%;
+    height: 400px;
+    background-image: url('http://aurasafira.co.ke/images/slider/bg1_2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .two{
+    width: 100%;
+    height: 400px;
+    background-image: url('http://aurasafira.co.ke/images/slider/bg1_2.png');
+    background-size: cover;
+  }
+}
