@@ -15,8 +15,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery
 //= require toastr
+
 $(document).ready(function(){
   window.sr = ScrollReveal({ reset: true });
   sr.reveal('.mission', { duration: 1000 });
@@ -25,4 +25,17 @@ $(document).ready(function(){
   sr.reveal('.int', { duration: 1000 });
   sr.reveal('.coll', { duration: 1000 });
   sr.reveal('.exe', { duration: 1000 });
+  sr.reveal('.inn', { duration: 1000 });
+
+  
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 });
+
+// home part
