@@ -18,6 +18,18 @@ background-repeat: no-repeat;
 background-size: cover;
 background-color: black;
 }
+  background-color: black;
+  color: white;
+  #kl{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    .number{
+      font-size: 100px;
+      margin-left: 80px;
+      color: #960c71;
+      opacity: 0.5;
+    }
+  }
 .one{
   background-color: white;
 }
