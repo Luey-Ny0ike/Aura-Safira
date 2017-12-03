@@ -2,20 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.nyuma{
-  background-color:#f7faff;
-  .fom{
-    padding-top: 40px;
-    #kati{
-      text-align: center;
+iframe, object, embed {
+    max-width: 100%;
+}
+  @media (max-width: 1257px){
+    .big{
+      display: none;
     }
-    .map{
-      margin-right: 0px;
-    }
-    .col-md-11{
-      margin-bottom: 12px;
-    }
-    #send{
+    .small{
+      display: none;
     }
   }
+  @media (min-width: 1257px){
+    .meduim{
+      display: none;
+    }
+    .small{
+      display: none;
+    }
+  }
+  @media (max-width: 857px){
+    .big{
+      display: none;
+    }
+    .medium{
+      display: none;
+    }
+  }
+  #down{
+    width: 18%;
+    float: left;
+    margin-bottom: 20px;
+    background-color: #960c71;
+    border-color: #960c71;
+    color: #ea3c8e;
+  }
+.field{
+  margin-bottom: 12px;
 }
