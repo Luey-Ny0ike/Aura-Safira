@@ -55,6 +55,7 @@ gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+gem 'font-awesome-sass'
 gem 'toastr-rails'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
