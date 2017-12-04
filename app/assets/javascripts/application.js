@@ -27,15 +27,7 @@ $(document).ready(function(){
   sr.reveal('.exe', { duration: 1000 });
   sr.reveal('.inn', { duration: 1000 });
 
-  
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
-  });
+
 });
 
 // home part
