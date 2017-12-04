@@ -4,7 +4,7 @@
     <title>AuraSafira</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto+Slab|Anton" rel="stylesheet">
   </head>
@@ -39,38 +39,67 @@
         </div>
 
         <% unless flash.empty? %>
-        <script type="text/javascript">
-          <% flash.each do |f| %>
-          <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
-          toastr['<%= type %>']('<%= f[1] %>');
+          <script type="text/javascript">
+            <% flash.each do |f| %>
+              <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+                toastr['<%= type %>']('<%= f[1] %>');
+              <% end %>
+            </script>
           <% end %>
-        </script>
-        <% end %>
-        <%= yield %>
-        <div class="footer">
-          <div class="container row">
-            <div class="col-md-6">
-              <div class="content">
-                <h1 id="ftheader">
-                  <em>
-                    <strong>ASC</strong>
-                  </em>
-                </h1>
-                <p>Aura Safira Consulting Limited (ASC) is a management, development, technology, capacity building and policy consulting company</p>
-                <p>
-                  <strong>Phone Number:
-                  </strong>+254 20 440 2973</p>
-                <p>
-                  <strong>Email:
-                  </strong>info@aurasafira.co.ke</p>
-                <p>
-                  <strong>Website:
-                  </strong>aurasafira.co.ke</p>
+          <%= yield %>
+          <div class="container-fluid footer">
+            <div class="p1 container row">
+              <div class="icns col-md-4">
+                <!-- the social icons go here -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-flickr"></a>
+                <a href="#" class="fa fa-vimeo"></a>
+                <a href="#" class="fa fa-tumblr"></a><br>
+                <a href="#" class="fa fa-skype"></a>
+              </div>
+              <div class="col-md-4">
+                <!-- the logo here -->
+              </div>
+              <div class="bttn col-md-4">
+                <!-- the contact us button here -->
+                <a class="button enquiry" href="/contacts">Make Enquiry</a>
+              </div>
+            </div>
+            <div class="p2 row">
+              <div class="col-md-6">
+                <!-- the phone number -->
+                <span class="pnk1">
+                  <h4>+254 20 440 2973</h4>
+                  <h6>Phone Number</h6>
+                </span>
+              </div>
+              <div class="col-md-6">
+                <!-- the email here -->
+                <div class="pnk">
+                  <h4>info@aurasafira.co.ke</h4>
+                  <h6>email</h6>
+                </div>
+              </div>
+            </div>
+            <div class="p3 row"><br>
+              <div class="col-md-6">
+                <!-- the @ ltd part -->
+                © 2017 ASC - ALL RIGHTS RESERVED.
+              </div>
+              <div class="l col-md-6">
+                <!-- made by part -->
+                <h6>Made with by
+                  <span class="glyphicon glyphicon-heart"></span>
+                  by
+                  <a href="http://lewis-nyoike.herokuapp.com/" target="_blank">Lewis Nyoike</a>
+                </h6>
               </div>
             </div>
           </div>
-        </div>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <%= javascript_include_tag 'scrollreveal.min.js', 'data-turbolinks-track': 'reload' %>
-      </body>
-    </html>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <%= javascript_include_tag 'scrollreveal.min.js', 'data-turbolinks-track': 'reload' %>
+          </script>
+        </body>
+      </html>
