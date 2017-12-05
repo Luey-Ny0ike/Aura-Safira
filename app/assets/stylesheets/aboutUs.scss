@@ -166,6 +166,22 @@
 }
 .testimonials{
   background-color: #3498db;
+  .actual{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-image:url('testimonial.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  #say{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+  }
 }
 
 .teams{
