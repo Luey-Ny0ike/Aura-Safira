@@ -122,25 +122,11 @@
   <br>
   <h3 id="pj">Recent Projects</h3>
   <hr id="pjl"><br><br>
-  <div class="container single-item">
-    <div class="col-md-6">
-    woiye
-    </div>
-    <div class="col-md-6">
-      2
-    </div>
-    <div class="col-md-6">
-      3
-    </div>
-    <div class="col-md-6">
-      4
-    </div>
-    <div class="col-md-6">
-      5
-    </div>
+
+    <%= render 'projects/projects' %>
 
   </div>
-  <br>
+  <br><br><br>
 </div>
 <div class="container-fluid partners">
 <br>
@@ -150,27 +136,27 @@
     <div class="col-md-1 col-sm-1"></div>
     <div class="col-md-2 col-sm-2 col-xs-4">
       <a href="http://www.mn.uio.no/ifi/english/research/networks/hisp/" target="_blank">
-        <img src="http://aurasafira.co.ke/images/dhis.jpeg" alt="DHIS2" class="picon">
+        <%= image_tag('uio-logo.jpeg', id:"onez", alt:"Uio")%>
       </a>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-4">
       <a href="https://www.userful.com/" target="_blank">
-        <img src="http://aurasafira.co.ke/images/userful.jpg" alt="Userful">
+        <%= image_tag('userful.jpg', id:"one", alt:"userful")%>
       </a>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-4">
       <a href="http://sci.uonbi.ac.ke/" target="_blank">
-        <img src="http://aurasafira.co.ke/images/uon.jpg" alt="University of Nairobi">
+        <%= image_tag('uon.jpg', id:"one", alt:"Uon")%>
       </a>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-4">
       <a href="http://www.health.go.ke/" target="_blank">
-        <img src="http://aurasafira.co.ke/images/moh.jpg" alt="Ministry of Health">
+        <%= image_tag('moh.jpg', id:"one", alt:"moh")%>
       </a>
     </div>
     <div class="col-md-2 col-sm-2 col-xs-4">
       <a href="http://www.kehia.org/" target="_blank">
-        <img src="http://aurasafira.co.ke/images/khia.png" alt="Kenya Health Informatics Association">
+      <%= image_tag('khia.png', id:"two", alt:"Kenya Health Informatics Association")%>
       </a>
     </div>
     <div class="col-md-1 col-sm-2 col-xs-2"></div>
