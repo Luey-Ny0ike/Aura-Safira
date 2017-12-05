@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 //= require toastr
+//= require jquery.slick
 
 $(document).ready(function(){
   window.sr = ScrollReveal({ reset: true });
