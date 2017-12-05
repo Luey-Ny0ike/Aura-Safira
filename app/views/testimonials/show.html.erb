@@ -5,5 +5,16 @@
   <%= @testimonial.testimony %>
 </p>
 
+<p>
+  <strong>Testimony:</strong>
+  <%= @testimonial.name %>
+</p>
+
+<p>
+  <strong>Testimony:</strong>
+  <%= @testimonial.position %>
+</p>
+
+
 <%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
 <%= link_to 'Back', testimonials_path %>
