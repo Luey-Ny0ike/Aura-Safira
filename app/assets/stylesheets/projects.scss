@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .projectz{
+  background-color: #d9d9db;
   .pichaz{
     background-image: url('projects.jpeg');
     background-position: center;
@@ -11,28 +12,76 @@
     height: 485px;
     width: 100%;
   }
-}
-.projects{
-  .col-md-7{
-    margin-bottom: 12px;
+  .some{
+    background-color:  rgba(100, 100, 100, 0.27);
+    text-align: center;
+    margin: auto;
+    text-shadow: 1px 0px 0 black;
+    margin-top: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    width: 70%;
   }
-  .line{
-    background-color: red;
-    margin-top: 2px;
-  }
-  #card{
-    transition: 0.25s box-shadow;
-    margin: 20px;
-    padding: 4px;
-    background: #fff;
-    position: relative;
-    overflow: hidden;
-    z-index:1;
-    transition: all 0.5s ease;
-    color: #4A4A4A;
-    border: 1px solid #E8E8E8;
-    #cardi-title{
-      padding: 12px;
+
+  @media (max-width: 1200px){
+    .some{
+      background-color: rgba(100, 100, 100, 0.72);
+      margin-top: 200px;
     }
   }
+.actual{
+  #kato{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+  }
+  #katoz{
+    margin-top: 4px;
+    width: 7%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #960c71;
+    border-color: #960c71;
+    color: #950ab5;
+  }
+  .actual-projects{
+    .boki{
+      border: 1px solid #E8E8E8;
+      padding-left: 0px;
+      padding-right: 0px;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 20px;
+      background: #a9acad;
+      .bv{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 348px;
+      }
+      .vb{
+        padding-top: 4px;
+        height: 348px;
+      }
+      #image-boki{
+        height: 346px;
+        width: 100%;
+
+      }
+      #t{
+        font-family: 'Barlow', sans-serif;
+        font-weight: bold;
+      }
+    #katoc{
+      margin-top: 4px;
+      width: 7%;
+      float: left;
+      margin-bottom: 20px;
+      background-color: #960c71;
+      border-color: #960c71;
+      color: #950ab5;
+    }
+  }
+  }
+}
 }
