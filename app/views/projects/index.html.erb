@@ -1,57 +1,33 @@
 <p id="notice"><%= notice %></p>
 <div class="container-flui projectz">
   <div class="pichaz">
-    <br><br><br><br>
+    <br>
+    <div class="some">
+      <h4>At ASC we deal with Health Informatics, Data ware housing, Data Services Layer, Health Information technology,
+        Population and Health Systems Research and Policy, Economic Evaluations, Impact Evaluations and
+        Implementation Science.</h4>
+    </div>
+    <br>
   </div>
-</div>
-
-<!-- <div class="projects">
-  <div class="multiple-items row">
-  <% @projects.each do |project|%>
-      <div class="col-md-4">
-        <div id="card">
-          <div class="top">
-              <%= image_tag project.picture.url(:medium, :class=>"img-responsive"), id: "image-main"%>
+  <div class="actual"><br>
+    <h3 id="kato">Our Projects</h3>
+    <hr id="katoz"><br><br><br>
+    <div class="actual-projects">
+      <% @projects.each do |project|%>
+        <div class="boki row">
+          <div class="bv col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <%= image_tag project.picture.url(:large, :class=>"img-responsive"), id: "image-boki"%>
           </div>
-          <div class="details">
-            <div id="cardi-title">
-              <%=link_to (project.title), project_path(project.id)%>
+            <div class="vb col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h4 id="t"><%= project.title%></h4>
+              <hr id="katoc">
             </div>
-          </div>
         </div>
-      </div>
-  <% end %>
+      <% end %>
+    </div>
+  </div>
+  <br><br>
 </div>
-</div> -->
 
-<h1>Projects</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Status</th>
-      <th>Skills</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.title %></td>
-        <td><%= project.description %></td>
-        <td><%= project.status %></td>
-        <td><%= project.skills %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
 
 <%= link_to 'New Project', new_project_path %>
