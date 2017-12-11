@@ -5,6 +5,19 @@
 .projectz{
   background-color: #d9d9db;
   .pichaz{
+    .hde{
+      float: right;
+      padding-top: 40px;
+      padding-right: 20px;
+      font-family: 'Anton', sans-serif;
+      color: white;
+      #hde{
+        width: 48%;
+        background-color: #960c71;
+        border-color: #960c71;
+        color: #ea3c8e;
+      }
+    }
     background-image: url('projects.jpeg');
     background-position: center;
     background-size: cover;
