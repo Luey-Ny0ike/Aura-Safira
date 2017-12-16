@@ -24,7 +24,8 @@
           </div>
             <div class="vb col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <h4 id="t"><%= project.title%></h4>
-              <hr id="katoc">
+              <hr id="katoc"><br><br>
+              <p id="p"><%= project.description.first(500)%> <%= link_to "...learn more", project_path(project)%></p>
             </div>
         </div>
       <% end %>
