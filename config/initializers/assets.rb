@@ -9,6 +9,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( scrollreveal.min.js )
+Rails.application.config.assets.precompile += %w( ckeditor/*)
 # Rails.application.config.assets.precompile += %w( slick.css )
 # Rails.application.config.assets.precompile += %w( slick-theme.css )
 # Rails.application.config.assets.precompile += %w( slick.min.js )
