@@ -19,27 +19,27 @@
     </div>
   </div>
   <div class="field">
-    <div class="col-md-7">
+    <div class="col-md-10">
       <%= form.text_field :title, id: :project_title, :class=>"form-control", placeholder: "Title"%>
     </div>
   </div>
 
 
   <div class="field">
-    <div class="col-md-7">
+    <div class="col-md-10">
       <%= form.text_field :status, id: :project_status, :class=>"form-control", placeholder: "Status" %>
     </div>
   </div>
 
   <div class="field">
-    <div class="col-md-7">
+    <div class="col-md-10">
       <%= form.text_field :skills, id: :project_skills, :class=>"form-control", placeholder: "Skills" %>
     </div>
   </div>
 
   <div class="field">
-    <div class="col-md-7">
-      <%= form.text_area :description, id: :project_description, :class=>"form-control", placeholder: "Description" %>
+    <div class="col-md-10">
+      <%= form.cktext_area :description, id: :project_description, :class=>"form-control", placeholder: "Description", as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } } %>
     </div>
   </div>
 
