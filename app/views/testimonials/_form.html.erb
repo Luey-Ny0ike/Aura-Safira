@@ -1,30 +1,29 @@
-<%= form_with(model: testimonial, local: true) do |form| %>
-  <% if testimonial.errors.any? %>
+<%= form_with(model: @testimonial, local: true) do |form| %>
+  <% if @testimonial.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(testimonial.errors.count, "error") %> prohibited this testimonial from being saved:</h2>
 
       <ul>
-      <% testimonial.errors.full_messages.each do |message| %>
+      <% @testimonial.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :testimonial_name %>
-  </div>
-  <div class="field">
-    <%= form.label :position %>
-    <%= form.text_field :position, id: :testimonial_position %>
-  </div>
-  <div class="field">
-    <%= form.label :testimony %>
-    <%= form.text_field :testimony, id: :testimonial_testimony %>
-  </div>
+  <div class="row t">
+    <div class="field col-md-10">
+      <%= form.text_field :name, id: :testimonial_name, placeholder: "Name" , class:"form-control"%>
+    </div>
+    <div class="field col-md-10">
+      <%= form.text_field :position, id: :testimonial_position, placeholder: "Position", class:"form-control" %>
+    </div>
+    <div class="field col-md-10">
+      <%= form.text_area :testimony, id: :testimonial_testimony, placeholder: "Testimonial", class:"form-control" %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions col-md-7">
+      <%= form.submit class:"btn btn-info"%>
+    </div>
   </div>
 <% end %>
