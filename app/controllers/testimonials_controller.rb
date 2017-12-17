@@ -1,6 +1,5 @@
 class TestimonialsController < ApplicationController
   before_action :set_testimonial, only: [:show, :edit, :update, :destroy]
-
   # GET /testimonials
   # GET /testimonials.json
   def index
@@ -14,7 +13,7 @@ class TestimonialsController < ApplicationController
 
   # GET /testimonials/new
   def new
-    @testimonial = current_user.testimonials.build
+    @testimonial = Testimonial.new
   end
 
   # GET /testimonials/1/edit
@@ -24,11 +23,11 @@ class TestimonialsController < ApplicationController
   # POST /testimonials
   # POST /testimonials.json
   def create
-    @testimonial = current_user.testimonials.build(testimonial_params)
+    @testimonial = Testimonial.new(testimonial_params)
 
     respond_to do |format|
       if @testimonial.save
-        format.html { redirect_to @testimonial, notice: 'Testimonial was successfully created.' }
+        format.html { redirect_to about_us_path, notice: 'Testimonial was successfully created.' }
         format.json { render :show, status: :created, location: @testimonial }
       else
         format.html { render :new }
