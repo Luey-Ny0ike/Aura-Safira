@@ -4,16 +4,13 @@
   <div class="container"><br>
     <h4 id="tle"><%= @project.title%></h4><br>
     <div class="row">
-      <div class="col-md-7">
-        <%= image_tag @project.picture.url(:large), :class=>"img-responsive" %>
-      </div>
-      <div class="col-md-5">
+      <div class="col-md-12">
         <h5>
           <strong>Project Description</strong>
         </h5>
         <hr class="linez"><br><br>
         <p>
-          <%= @project.description %>
+          <%= @project.description.html_safe %>
         </p>
 
         <h5>
@@ -29,6 +26,7 @@
       </div>
     </div>
   </div>
+
 
   <div class="container">
     <% if user_signed_in? %>
