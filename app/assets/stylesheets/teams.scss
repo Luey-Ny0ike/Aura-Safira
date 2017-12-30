@@ -54,6 +54,19 @@
   }
 }
 
+#gpn{
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+}
+#undex {
+  width: 18%;
+  float: left;
+  margin-bottom: 20px;
+  background-color: #aa24af;
+  border-color: #aa24af;
+  color: #aa24af;
+}
+
 .card {
   @include BoxShadowHelper(1);
   transition: 0.25s box-shadow;
