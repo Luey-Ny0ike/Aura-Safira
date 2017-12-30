@@ -9,25 +9,23 @@
   </div>
 
 <div class="container">
-  <h2 id="head">Meet the team</h2>
+  <h2 id="head">Meet the teams</h2>
 
-  <div class="row">
-    <% @teams.each do |team|%>
-    <div class="col-md-3 card">
+  <% @groups.each do|group|%>
+    <h4 id="gpn"><%= group.name%></h4>
+    <hr id="undex"><br><br><br>
+    <% group.teams.each do |team|%>
+    <div class="col-md-3 col-sm-6 col-xs-6 card">
         <div class="top">
           <%= image_tag team.avatar.url(:medium, :class=>"img-responsive"), id: "image-main"%>
         </div>
         <div class="details">
           <h4 class="card-title">
           <%= team.name %></h4>
-          <h5><strong>Position: </strong><%= team.postion%></h5>
-          <h5><strong>Role: </strong><%= team.role%></h5>
-          <h6 class="text-muted">
-          <strong>Statement:</strong> "<%= team.statement %>"</h6>
         </div>
     </div>
     <% end %>
-  </div>
+  <% end %>
 </div>
 
 <% if user_signed_in?%>
