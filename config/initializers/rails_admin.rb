@@ -1,5 +1,4 @@
 RailsAdmin.config do |config|
-
   ### Popular gems integration
 
   # == Devise ==
@@ -22,6 +21,28 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+
+  config.model Project do
+    edit do
+      #   # For RailsAdmin >= 0.5.0
+      field :picture do
+        label 'Cover Photo'
+      end
+      field :title
+      field :synopsis, :text do
+        html_attributes do
+          {rows: 7, cols: 50, placeholder: "Short description (500 words max)"}
+        end
+      end
+      field :description, :ck_editor
+      field :status
+      field :skills
+      #   # For RailsAdmin < 0.5.0
+      #   # field :description do
+      #   #   ckeditor true
+      #   # end
+    end
+  end
 
   config.actions do
     dashboard                     # mandatory
