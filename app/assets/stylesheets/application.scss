@@ -38,15 +38,17 @@
 
 .footer {
   background-color: #141414;
+
   .p1 {
     width: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: #141414;
 
-    .icns{
+    .icns {
       padding-top: 95px;
       padding-bottom: 45px;
+
       .fa {
         padding: 10px 21px 10px 10px;
         font-size: 15px;
@@ -66,9 +68,10 @@
       }
     }
 
-    .bttn{
+    .bttn {
       padding-top: 95px;
       padding-bottom: 45px;
+
       .enquiry {
         padding: 15px 32px;
         text-align: center;
@@ -77,24 +80,29 @@
         border: 1.5px solid #ea3c8e;
         color: white;
       }
-      .enquiry:hover{
+
+      .enquiry:hover {
         background: #ea3c8e;
         color: white;
       }
     }
   }
-  .p2{
+
+  .p2 {
     text-align: center;
     background: #111111;
     color: white;
-    .pnk:hover{
+
+    .pnk:hover {
       color: #ea3c8e;
     }
-    .pnk1:hover{
+
+    .pnk1:hover {
       color: #ea3c8e;
     }
   }
-  .p3{
+
+  .p3 {
     background: #000000;
   }
 }
@@ -107,14 +115,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    #one{
+
+    #one {
       text-align: center;
       color: white;
       font-family: 'Roboto Slab', serif;
       padding-top: 240px;
       text-shadow: 1px 1px 0 #FFF;
     }
-    #songa{
+
+    #songa {
       text-align: center;
     }
   }
@@ -126,13 +136,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    #two{
+
+    #two {
       text-align: center;
       color: white;
       font-family: 'Roboto Slab', serif;
       padding-top: 240px;
       text-shadow: 1px 1px 0 #FFF;
     }
+  }
+  .three{
+    #tatu{
+      text-align: center;
+      margin: auto;
+      height: 370px;
+    }
+    height: 400px;
   }
 }
 
@@ -146,6 +165,47 @@
     background-repeat: no-repeat;
     text-align: center;
     opacity: 0.8;
+
+    .hde {
+      display: none;
+    }
+
+    #bn {
+      margin-top: 10px;
+      width: 18%;
+      float: left;
+      margin-bottom: 20px;
+      background-color: #ea3c8e;
+      border-color: #ea3c8e;
+      color: #ea3c8e;
+      display: none;
+      padding: 0.8px;
+    }
+  }
+
+  .bat1:hover {
+    transition: 1.5s;
+    .hde {
+      display: block;
+      color: white;
+      padding-top: 65px;
+      text-shadow: 1px 1px 0 #000;
+    }
+
+    #bn {
+      display: block;
+    }
+
+    .icn {
+      display: none;
+    }
+
+    #innovate {
+      display: none;
+    }
+    cursor: pointer;
+    background: url("innovate.jpg");
+    height: 171px;
   }
 
   .icn {
@@ -168,6 +228,46 @@
     background-repeat: no-repeat;
     text-align: center;
     opacity: 0.8;
+    .hde {
+      display: none;
+    }
+
+    #bn {
+      margin-top: 10px;
+      width: 18%;
+      float: left;
+      margin-bottom: 20px;
+      background-color: #ea3c8e;
+      border-color: #ea3c8e;
+      color: #ea3c8e;
+      display: none;
+      padding: 0.8px;
+    }
+  }
+
+  .bat:hover {
+    transition: 1.5s;
+    .hde {
+      display: block;
+      color: white;
+      padding-top: 65px;
+      text-shadow: 1px 1px 0 #000;
+    }
+
+    #bn {
+      display: block;
+    }
+
+    .icn {
+      display: none;
+    }
+
+    #informate {
+      display: none;
+    }
+    cursor: pointer;
+    background: url("informate.jpg");
+    height: 171px;
   }
 
   .bat2 {
@@ -177,17 +277,46 @@
     background-repeat: no-repeat;
     text-align: center;
     opacity: 0.8;
+    .hde {
+      display: none;
+    }
+
+    #bn {
+      margin-top: 10px;
+      width: 18%;
+      float: left;
+      margin-bottom: 20px;
+      background-color: #ea3c8e;
+      border-color: #ea3c8e;
+      color: #ea3c8e;
+      display: none;
+      padding: 0.8px;
+    }
   }
 
-  .bat2z {
-    background-color: red;
+  .bat2:hover {
+    transition: 1.5s;
+    .hde {
+      display: block;
+      color: white;
+      padding-top: 65px;
+      text-shadow: 1px 1px 0 #000;
+    }
+
+    #bn {
+      display: block;
+    }
+
+    .icn {
+      display: none;
+    }
+
+    #transformate {
+      display: none;
+    }
     cursor: pointer;
-    background-image: url("transformate.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    opacity: 0.4;
+    background: url("transformate.jpg");
+    height: 171px;
   }
 }
 
@@ -304,7 +433,8 @@
   background-color: #cfd2d6;
   padding-top: 40px;
   padding-bottom: 40px;
-  #onez{
+
+  #onez {
     width: 100px;
     height: 70px;
   }
