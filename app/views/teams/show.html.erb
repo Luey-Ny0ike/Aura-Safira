@@ -9,20 +9,7 @@
 <strong>Picture: </strong>
 <%= image_tag @team.avatar.url(:medium) %>
 </p>
-<p>
-  <strong>Postion:</strong>
-  <%= @team.postion %>
-</p>
 
-<p>
-  <strong>Role:</strong>
-  <%= @team.role %>
-</p>
-
-<p>
-  <strong>Statement:</strong>
-  <%= @team.statement %>
-</p>
 
 <%= link_to 'Edit', edit_team_path(@team) %> |
 <%= link_to 'Back', teams_path %>
