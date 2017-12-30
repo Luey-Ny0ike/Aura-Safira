@@ -1,0 +1,12 @@
+<div class="container">
+<ul>
+  <% @groups.each do |group|%>
+    <li><%= group.name%></li>
+    <li><%= group.description%></li>
+  <% end %>
+</ul>
+
+<% if user_signed_in?%>
+<%= link_to 'New group', new_group_path %>
+<% end%>
+</div>
