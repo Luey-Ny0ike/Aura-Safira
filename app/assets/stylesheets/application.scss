@@ -447,3 +447,14 @@
     font-weight: bold;
   }
 }
+@media (max-width: 777px) {
+  .multiple-s{
+    display: none;
+  }
+}
+@media (min-width: 777px) {
+  .multiple{
+    display: none;
+    text-align: center;
+  }
+}
