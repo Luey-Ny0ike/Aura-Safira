@@ -178,6 +178,19 @@
     margin-bottom: 12px;
   }
 }
+@media (max-width: 780px){
+  .mrg{
+    padding-left: 50px;
+  }
+}
+@media (max-width: 480px){
+  .mrg{
+    padding-left: 20px;
+    .cardi{
+      height: auto;
+    }
+  }
+}
 }
 .testimonials{
   background-color: #3498db;
