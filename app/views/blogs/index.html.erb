@@ -6,6 +6,29 @@
       <h5 id="jn">Read the latest news about our work</h5>
     </div>
   </div>
+  <div class="container">
+    <h2 class="hb">Our blogs</h2>
+    <hr id="und">
+    <div class="blogs">
+      <% if @blogs.any?%>
+      <div class="row boxie">
+        <% @blogs.each do |blog|%>
+        <div class="vb col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <%= image_tag blog.picture.url, class:"img-responsive"%><br><br>
+          <%= blog.created_at.day %> <%= blog.created_at.strftime("%B")%> <%= blog.created_at.year%>
+        </div>
+        <div class="vbc col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h3 id="nn"><%= blog.title%></h3><br>
+          <p><%= blog.description%></p>
+        </div>
+        <hr>
+        <% end %>
+        <% else %>
+        <h3 id="stay">No blog posts yet. Stay tuned they are coming soon</h3>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
 
 <h1>Blogs</h1>
