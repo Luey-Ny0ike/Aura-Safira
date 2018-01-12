@@ -1,3 +1,25 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blogs{
+  .pichab{
+    background-image: url('bloggie.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    .cnt{
+      text-align: center;
+      color: white;
+      padding-top: 140px;
+      padding-bottom: 140px;
+      #nj{
+        font-family: 'Abril Fatface', cursive;
+      }
+      #jn{
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+}
