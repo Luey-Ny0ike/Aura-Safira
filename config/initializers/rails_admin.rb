@@ -44,6 +44,13 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Blog do
+    edit do
+      field :title
+      field :content, :ck_editor
+    end
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
