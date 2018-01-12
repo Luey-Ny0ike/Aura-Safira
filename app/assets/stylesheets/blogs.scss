@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .blogs{
+  #stay{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
   .pichab{
     background-image: url('bloggie.jpg');
     background-position: center;
@@ -22,4 +26,35 @@
       }
     }
   }
+  .hb{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  }
+  #und{
+    width: 18%;
+    margin-bottom: 20px;
+    background-color: #aa24af;
+    border-color: #aa24af;
+    color: #aa24af;
+  }
+  .boxie{
+    padding-left: 0px;
+    padding-right: 0px;
+    width:60%;
+    margin: auto;
+    margin-bottom: 20px;
+    .vb{
+      padding-left: 0px;
+      padding-right: 0px;
+      height: auto;
+    }
+    .vbc{
+      padding-top: 4px;
+      height: 348px;
+      padding-left: 10px;
+      #nn{
+        font-family: 'Montserrat', sans-serif;
+      }
+  }
+}
 }
