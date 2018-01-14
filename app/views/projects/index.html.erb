@@ -17,8 +17,8 @@
     <h3 id="kato">Our Projects</h3>
     <hr id="katoz"><br><br><br>
     <div class="actual-projects">
+      <% if @projects.any? %>
       <% @projects.each do |project|%>
-        <% if project.any? %>
         <div class="boki row">
           <div class="bv col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <%= image_tag project.picture.url(:large, :class=>"img-responsive"), id: "image-boki"%>
@@ -29,6 +29,7 @@
               <p id="p"><%= project.synopsis.first(500)%> <%= link_to "...learn more", project_path(project)%></p>
             </div>
         </div>
+        <% end %>
         <% else %>
         <span id="stay">No projects yet.</span>
       <% end %>

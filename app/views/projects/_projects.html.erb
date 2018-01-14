@@ -1,8 +1,8 @@
 
 <div class="container projects">
   <div class="multiple-items row">
+    <% if @projects.any?%>
   <% @projects.each do |project|%>
-      <% if project.any?%>
       <div class="p-slide col-md-3">
         <div id="card">
           <div class="top">
@@ -15,6 +15,7 @@
           </div>
         </div>
       </div>
+      <% end %>
       <% else %>
       <span id="stay">No projects yet</span>
   <% end %>
