@@ -13,15 +13,15 @@
       <% if @blogs.any?%>
       <div class="row boxie">
         <% @blogs.each do |blog|%>
-        <div class="vb col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <%= image_tag blog.picture.url, class:"img-responsive"%><br><br>
-          <%= blog.created_at.day %> <%= blog.created_at.strftime("%B")%> <%= blog.created_at.year%>
-        </div>
-        <div class="vbc col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h3 id="nn"><%= blog.title%></h3><br>
-          <p><%= blog.description%></p>
-        </div>
-        <hr>
+          <div class="vb col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <%= image_tag blog.picture.url, class:"img-responsive"%><br><br>
+            <%= blog.created_at.day %> <%= blog.created_at.strftime("%B")%> <%= blog.created_at.year%>
+          </div>
+          <div class="vbc col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h3 id="nn"><%=link_to blog.title, blog%></h3><br>
+            <p><%= blog.description.first(250)%> ...</p>
+          </div><span id="kn"><%= link_to "Learn More", blog%></span>
+          <hr>
         <% end %>
         <% else %>
         <h3 id="stay">No blog posts yet. Stay tuned they are coming soon</h3>
@@ -30,31 +30,3 @@
     </div>
   </div>
 </div>
-
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.content %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
