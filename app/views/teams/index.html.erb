@@ -10,7 +10,7 @@
 
 <div class="container">
   <h2 id="head">Meet the teams</h2>
-
+  <% if @groups.any?%>
   <% @groups.each do|group|%>
     <h4 id="gpn"><%= group.name%></h4>
     <hr id="undex"><br><br><br>
@@ -25,6 +25,9 @@
         </div>
     </div>
     <% end %>
+  <% end %>
+  <% else %>
+  <br><span id="stay">No Team members yet. </span><br><br>
   <% end %>
 </div>
 
