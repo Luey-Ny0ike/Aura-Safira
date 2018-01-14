@@ -42,7 +42,7 @@
     padding-right: 0px;
     width:60%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     .vb{
       padding-left: 0px;
       padding-right: 0px;
@@ -50,11 +50,14 @@
     }
     .vbc{
       padding-top: 4px;
-      height: 348px;
+      height: auto;
       padding-left: 10px;
       #nn{
         font-family: 'Montserrat', sans-serif;
       }
+  }
+  #kn{
+    padding-left: 10px;
   }
 }
 }
