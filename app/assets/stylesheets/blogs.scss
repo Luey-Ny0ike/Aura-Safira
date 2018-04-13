@@ -61,3 +61,17 @@
   }
 }
 }
+@media (max-width: 784px){
+  .blogs{
+      .boxie{
+        width: 85%;
+      }
+  }
+}
+@media (max-width: 442px){
+  .blogs{
+      .boxie{
+        width: auto;
+      }
+  }
+}
