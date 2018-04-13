@@ -12,19 +12,21 @@
   <h2 id="head">Meet the teams</h2>
   <% if @groups.any?%>
   <% @groups.each do|group|%>
-    <h4 id="gpn"><%= group.name%></h4>
-    <hr id="undex"><br><br><br>
-    <% group.teams.each do |team|%>
-    <div class="col-md-3 col-sm-6 col-xs-6 card">
-        <div class="top">
-          <%= image_tag team.avatar.url(:medium, :class=>"img-responsive"), id: "image-main"%>
-        </div>
-        <div class="details">
-          <h4 class="card-title">
-          <%= team.name %></h4>
-        </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h4 id="gpn"><%= group.name%></h4>
+      <hr id="undex"><br><br><br>
+      <% group.teams.each do |team|%>
+      <div class="col-md-3 col-sm-6 col-xs-8 card">
+          <div class="top">
+            <%= image_tag team.avatar.url(:large, :class=>"img-responsive"), id: "image-main"%>
+          </div>
+          <div class="details">
+            <h4 class="card-title">
+            <%= team.name %></h4>
+          </div>
+      </div>
+      <% end %>
     </div>
-    <% end %>
   <% end %>
   <% else %>
   <br><span id="stay">No Team members yet. </span><br><br>
