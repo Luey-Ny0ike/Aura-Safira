@@ -19,6 +19,7 @@
 //= require jquery.slick
 
 $(document).ready(function(){
+  $('.preloader').fadeOut('slow',function(){$(this).remove();});
   window.sr = ScrollReveal({ reset: true });
   sr.reveal('.mission', { duration: 1000 });
   sr.reveal('.vission', { duration: 1000 });
